@@ -55,6 +55,7 @@
             dataGridViewPersonnes = new DataGridView();
             dataGridViewBorrowed = new DataGridView();
             dataGridViewLibrary = new DataGridView();
+            button1 = new Button();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPersonnes).BeginInit();
@@ -311,6 +312,18 @@
             dataGridViewLibrary.Size = new Size(234, 100);
             dataGridViewLibrary.TabIndex = 22;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.IndianRed;
+            button1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(404, 345);
+            button1.Name = "button1";
+            button1.Size = new Size(220, 80);
+            button1.TabIndex = 26;
+            button1.Text = "EXIT";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -318,6 +331,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 461);
+            Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(buttonReturn);
@@ -370,5 +384,6 @@
         private DataGridView dataGridViewBorrowed;
         private DataGridView dataGridViewLibrary;
         private DateTimePicker dateTimePickerPublicationDate;
+        private Button button1;
     }
 }
